@@ -13,12 +13,18 @@ body {
     font-size: 18px;
 }
 
-section {
-  height: 100vh;
+h2{
+    text-align: center;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .main-container {
     width: 100%;
+    height: auto;
 }
 
 a {
@@ -70,10 +76,8 @@ a:hover {
 }
 
 .projects > div {
-  flex-basis: 33%;
-  flex-grow: 1;
-
-
+  flex: 1 1 10em;
+  margin: 3em;
 }
 
 /****************SKILLS SECTION****************/
@@ -92,11 +96,41 @@ a:hover {
 
 /****************ABOUT ME SECtION****************/
 .aboutMe {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
+  display: flex;
+  flex-direction; column;
+  flex-wrap: wrap;
 }
 
+.aboutMe h3 {
+  text-align: center;
+}
+.aboutMe-col-background {
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+  flex: 1 1 20rem;
+  padding: 1em;
+  margin: 1em;
+}
+
+.aboutMe-col-strengths {
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+  flex: 1 1 20rem;
+  padding: 1em;
+  margin: 1em;
+}
+
+.aboutMe-col-image {
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+  flex: 1 2 35rem;
+  margin: 1em;
+  text-align: center;
+  border-radius: 3em;
+}
+
+
+/****************COLORED BOXES****************/
 .yellow-box, .blue-box, .red-box {
     border-radius: 0.5rem;
     padding-left: 1rem;
@@ -104,11 +138,6 @@ a:hover {
     /*margin: 1rem 0.5rem 1rem 0.5rem;*/
 }
 
-h2{
-    text-align: center;
-}
-
-/****************COLORED BOXES****************/
 .yellow-box {
     border: 0.15rem solid #E0A458;
 }
@@ -118,10 +147,11 @@ h2{
 }
 
 .red-box {
-    border: 0.15rem solid #FF5A5F;
+    border-left: 0.15rem solid #FF5A5F;
+    border-right: 0.15rem solid #FF5A5F;
 }
 
-/****************STYLED LINE****************/
+/****************STYLED LINES****************/
 .line-sm {
     border-bottom: 2px solid #E0A458;
     width: 25vw;
@@ -143,6 +173,31 @@ h2{
 .line-fill {
     border-bottom: 2px solid #E0A458;
 }
+/****************COLORED TEXT****************/
+.blue-text {
+  color: #087E8B;
+}
+
+.red-text {
+  color: #FF5A5F;
+}
+
+.yellow-text {
+  color: #E0A458;
+}
+
+.blue-text:hover {
+  color: #E0A458;
+}
+
+.yellow-text:hover {
+  color: #FF5A5F;
+}
+
+.red-text:hover {
+  color: #087E8B;
+}
+
 /*****************************************/
 
 .break:before {
@@ -152,17 +207,6 @@ h2{
 
 #webDeveloper {
     color: #FF5A5F;
-}
-
-img {
-    width: 100%;
-    height: auto;
-}
-
-.img-wrapper {
-    width: 50%;
-    border-radius: 50%;
-    overflow: hidden;
 }
 
 .section-title {
