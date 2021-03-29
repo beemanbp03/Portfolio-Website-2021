@@ -14,7 +14,6 @@ body {
 }
 
 h2{
-    font-size: calc(32px + 2vw);
     text-align: center;
 }
 
@@ -26,6 +25,7 @@ img {
 .main-container {
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .main-container > section {
@@ -46,10 +46,9 @@ a {
 }
 
 .nav-bar a {
-    font-size: calc(1rem + 1vw);
     text-decoration: none;
     color: #EDF7F6;
-    margin: 1rem;
+    margin: 0.5rem;
 }
 
 .nav-bar a:hover {
@@ -67,7 +66,7 @@ a {
 
 }
 .billboard-container h1 {
-    font-size: calc(2em + 1vw);
+    font-size: 36px;
 }
 
 /****************PROJECTS SECTION****************/
@@ -102,7 +101,7 @@ a {
 /****************ABOUT ME SECtION****************/
 .aboutMe {
   display: flex;
-  flex-direction; column;
+  flex-direction; rows;
   flex-wrap: wrap;
 }
 
@@ -112,7 +111,7 @@ a {
 .aboutMe-col-background {
   border-left: 2px solid white;
   border-right: 2px solid white;
-  flex: 1 1 45%;
+  flex: 1 1 20rem;
   padding: 1em;
   margin: 1em;
 }
@@ -120,7 +119,7 @@ a {
 .aboutMe-col-strengths {
   border-left: 2px solid white;
   border-right: 2px solid white;
-  flex: 1 1 45%;
+  flex: 1 1 20rem;
   padding: 1em;
   margin: 1em;
 }
@@ -196,17 +195,10 @@ a {
   color: #E0A458;
 }
 
-.blue-text:hover {
-  color: #E0A458;
-}
-
-.yellow-text:hover {
+.yellow-link:hover {
   color: #FF5A5F;
 }
 
-.red-text:hover {
-  color: #087E8B;
-}
 
 /*****************************************/
 
