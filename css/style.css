@@ -13,6 +13,14 @@ body {
     font-size: 18px;
 }
 
+section {
+  height: 100vh;
+}
+
+.main-container {
+    width: 100%;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -22,10 +30,7 @@ a:hover {
     color: #E0A458;
 }
 
-.main-container {
-    width: 100%;
-}
-
+/****************NAVBAR SECTION****************/
 .nav-bar {
     display: flex;
     justify-content: space-around;
@@ -43,6 +48,7 @@ a:hover {
     color: #087E8B;
 }
 
+/****************BILLBOARD SECTION****************/
 .billboard-container {
     display: flex;
     flex-direction: column;
@@ -56,27 +62,53 @@ a:hover {
     font-size: 48px;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: 100%;
+/****************PROJECTS SECTION****************/
+.projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
-.aboutMe-container {
-    display: grid;
-    grid-template-columns: 100%;
+.projects > div {
+  flex-basis: 33%;
+  flex-grow: 1;
+
+
+}
+
+/****************SKILLS SECTION****************/
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skills > div {
+  flex-basis: 20%;
+  flex-grow; 1;
+  margin: 1em;
+  text-align: center;
+}
+
+/****************ABOUT ME SECtION****************/
+.aboutMe {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
 }
 
 .yellow-box, .blue-box, .red-box {
     border-radius: 0.5rem;
     padding-left: 1rem;
     padding-right: 1rem;
-    margin: 1rem 0.5rem 1rem 0.5rem;
+    /*margin: 1rem 0.5rem 1rem 0.5rem;*/
 }
 
 h2{
     text-align: center;
 }
 
+/****************COLORED BOXES****************/
 .yellow-box {
     border: 0.15rem solid #E0A458;
 }
@@ -89,6 +121,7 @@ h2{
     border: 0.15rem solid #FF5A5F;
 }
 
+/****************STYLED LINE****************/
 .line-sm {
     border-bottom: 2px solid #E0A458;
     width: 25vw;
@@ -103,13 +136,15 @@ h2{
 
 .line-lg {
     border-bottom: 2px solid #E0A458;
-    width: 75vw;
+    width: 100vw;
     display: block;
 }
 
 .line-fill {
     border-bottom: 2px solid #E0A458;
 }
+/*****************************************/
+
 .break:before {
     content: "\A";
     white-space: pre;
@@ -125,31 +160,11 @@ img {
 }
 
 .img-wrapper {
-    width: 100%;
+    width: 50%;
     border-radius: 50%;
     overflow: hidden;
 }
 
-@media only screen and (min-width: 768px) {
-    .break:before {
-        content: none;
-    }
-
-    .line-sm {
-        border-bottom: 2px solid #E0A458;
-        width: 10em;
-        display: block;
-    }
-
-    .line-md {
-        border-bottom: 2px solid #E0A458;
-        width: 20em;
-        display: block;
-    }
-
-    .line-lg {
-        border-bottom: 2px solid #E0A458;
-        width: 30em;
-        display: block;
-    }
+.section-title {
+  padding-bottom: 1em;
 }
