@@ -1,7 +1,7 @@
 /**
 background color: 251E21 rgb(37,30,33)
 yellow: E0A458 rgb(224,164,88)
-blue: 087E8B rgb(8,126,139)
+blue: 18DCF2 rgb(24,220,242)
 red: FF5A5F rgb(255,90,95)
 text-color: EDF7F6 rgb(237,247,246)
 */
@@ -14,6 +14,7 @@ body {
 }
 
 h2{
+    font-size: calc(32px + 2vw);
     text-align: center;
 }
 
@@ -23,8 +24,12 @@ img {
 }
 
 .main-container {
-    width: 100%;
-    height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-container > section {
+  flex-basis: 100%;
 }
 
 a {
@@ -32,9 +37,6 @@ a {
     color: inherit;
 }
 
-a:hover {
-    color: #E0A458;
-}
 
 /****************NAVBAR SECTION****************/
 .nav-bar {
@@ -44,14 +46,14 @@ a:hover {
 }
 
 .nav-bar a {
+    font-size: calc(1rem + 1vw);
     text-decoration: none;
-    font-size: 1.5rem;
     color: #EDF7F6;
     margin: 1rem;
 }
 
 .nav-bar a:hover {
-    color: #087E8B;
+    color: #0CC0D4;
 }
 
 /****************BILLBOARD SECTION****************/
@@ -60,19 +62,19 @@ a:hover {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
-    font-size: 24px;
+
 }
 .billboard-container h1 {
-    font-size: 48px;
+    font-size: calc(2em + 1vw);
 }
 
 /****************PROJECTS SECTION****************/
 .projects {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .projects > div {
@@ -83,15 +85,18 @@ a:hover {
 /****************SKILLS SECTION****************/
 .skills {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
-.skills > div {
-  flex-basis: 20%;
-  flex-grow; 1;
-  margin: 1em;
+.skills h3 {
+  font-size: calc(24px + 2vw);
+}
+
+.skills > div{
+  flex: 1 1 20rem;
   text-align: center;
+  margin: 0.5rem;
 }
 
 /****************ABOUT ME SECtION****************/
@@ -107,7 +112,7 @@ a:hover {
 .aboutMe-col-background {
   border-left: 2px solid white;
   border-right: 2px solid white;
-  flex: 1 1 20rem;
+  flex: 1 1 45%;
   padding: 1em;
   margin: 1em;
 }
@@ -115,18 +120,23 @@ a:hover {
 .aboutMe-col-strengths {
   border-left: 2px solid white;
   border-right: 2px solid white;
-  flex: 1 1 20rem;
+  flex: 1 1 45%;
   padding: 1em;
   margin: 1em;
 }
 
 .aboutMe-col-image {
-  border-top: 3px solid white;
-  border-bottom: 3px solid white;
-  flex: 1 2 35rem;
-  margin: 1em;
+  /*border-top: 3px solid white;
+  border-bottom: 3px solid white;*/
+  flex: 1 1 100%;
   text-align: center;
-  border-radius: 3em;
+  margin: auto;
+  border-radius: 0.5em;
+}
+
+.aboutMe-col-image img {
+  max-width: auto;
+  max-height: 30em;
 }
 
 
@@ -143,7 +153,7 @@ a:hover {
 }
 
 .blue-box {
-    border: 0.15rem solid #087E8B;
+    border: 0.15rem solid #0CC0D4;
 }
 
 .red-box {
@@ -210,5 +220,6 @@ a:hover {
 }
 
 .section-title {
+  margin-top: 4em;
   padding-bottom: 1em;
 }
