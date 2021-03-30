@@ -10,7 +10,7 @@ body {
     font-family: monospace;
     color: #EDF7F6;
     background-color: #251E21;
-    font-size: 18px;
+    font-size: calc(18px + 3vw);
 }
 
 .section-h2{
@@ -23,14 +23,18 @@ body {
 }
 
 img {
-  max-width: 100%;
-  max-height: 100%;
+  width: 100%;
+  height: auto;
 }
 
 .main-container {
   display: flex;
   flex-direction: column;
   overflow: hidden;
+}
+
+.main-container > div {
+  flex: 1 1 100%;
 }
 
 a {
@@ -49,7 +53,7 @@ a {
     left: 0;
     width: 100%;
     padding: 0.50rem;
-    font-size: calc(18px + 1vw);
+    font-size: calc(18px + 3vw);
     /*border: 1px solid white;*/
 }
 
@@ -96,7 +100,7 @@ a {
 }
 
 .skills h3 {
-  font-size: calc(24px + 2vw);
+  font-size: calc(24px + 3vw);
 }
 
 .skills > div{
@@ -157,7 +161,7 @@ a {
 .aboutMe-col-background {
   border-left: 2px solid white;
   border-right: 2px solid white;
-  flex: 1 1 20rem;
+  flex: 1 1 15rem;
   padding: 1em;
   margin: 1em;
 }
@@ -165,23 +169,16 @@ a {
 .aboutMe-col-strengths {
   border-left: 2px solid white;
   border-right: 2px solid white;
-  flex: 1 1 20rem;
+  flex: 1 1 15rem;
   padding: 1em;
   margin: 1em;
 }
 
 .aboutMe-col-image {
-  /*border-top: 3px solid white;
-  border-bottom: 3px solid white;*/
-  flex: 1 1 100%;
+  flex: 1 2 40rem;
   text-align: center;
-  margin: auto;
   border-radius: 0.5em;
-}
-
-.aboutMe-col-image img {
-  max-width: auto;
-  max-height: 30em;
+  margin: 1em;
 }
 
 /****************Footer Section****************/
@@ -193,9 +190,10 @@ footer {
 
 /****************COLORED BOXES****************/
 .yellow-box, .blue-box, .red-box {
-    border-radius: 0.5rem;
+    border-radius: 0.75rem;
     padding-left: 1rem;
     padding-right: 1rem;
+    overflow: hidden;
     /*margin: 1rem 0.5rem 1rem 0.5rem;*/
 }
 
@@ -208,8 +206,10 @@ footer {
 }
 
 .red-box {
-    border-left: 0.15rem solid #FF5A5F;
-    border-right: 0.15rem solid #FF5A5F;
+    border-left: 2px solid #FF5A5F;
+    border-right: 2px solid #FF5A5F;
+    border-radius: 0.25rem;
+
 }
 
 /****************STYLED LINES****************/
