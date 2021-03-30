@@ -103,6 +103,45 @@ a {
   flex: 1 1 15rem;
   text-align: center;
   margin: 0.5rem;
+  padding: 1rem;
+}
+
+/****************Call to Action****************/
+.call-to-action {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0.5rem;
+  text-align: center;
+}
+
+.call-to-action p, .button-box{
+  flex: 1 1 100%;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.call-to-action > div, a {
+  margin: 0.5rem;
+}
+
+.button-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.button {
+  flex: 1 1 30%;
+  padding: 1.25rem;
+  margin: 1.75rem;
+}
+
+.button:hover {
+  border: 2px solid #FF5A5F;
+  color: #FF5A5F;
 }
 
 /****************ABOUT ME SECtION****************/
@@ -145,6 +184,12 @@ a {
   max-height: 30em;
 }
 
+/****************Footer Section****************/
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
 
 /****************COLORED BOXES****************/
 .yellow-box, .blue-box, .red-box {
