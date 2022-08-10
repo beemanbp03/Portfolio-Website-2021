@@ -1,0 +1,278 @@
+/**
+background color: 251E21 rgb(37,30,33)
+yellow: E0A458 rgb(224,164,88)
+blue: 18DCF2 rgb(24,220,242)
+red: FF5A5F rgb(255,90,95)
+text-color: EDF7F6 rgb(237,247,246)
+*/
+
+body {
+    font-family: monospace;
+    color: #EDF7F6;
+    background-color: #251E21;
+    font-size: calc(10px + 1vw);
+}
+
+.section-h2{
+    display: flex;
+    justify-content: center;
+    margin-top: 5em;
+    padding-bottom: 2em;
+    text-align: center;
+    font-size: calc(16px + 1vw);
+}
+
+img {
+  width: 100%;
+  height: auto;
+  max-width: 28em;
+  max-height: auto;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.main-container > div {
+  flex: 1 1 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.contact::after {
+  content: "Contact";
+}
+
+.contact:hover::after {
+  content: "boulder.payne.beeman@gmail.com";
+}
+
+.contact-email::after {
+  content: "Email";
+}
+
+.contact-email:hover::after {
+  content: "boulder.payne.beeman@gmail.com";
+}
+
+/****************NAVBAR SECTION****************/
+.nav-bar {
+    background-color: #251E21;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /*border: 1px solid white;*/
+}
+
+.nav-bar a {
+    text-decoration: none;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    font-size: 1.60em;
+}
+
+.nav-bar a:hover {
+    color: #0CC0D4;
+}
+
+/****************BILLBOARD SECTION****************/
+.billboard-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+
+}
+.billboard-container h1 {
+  font-size: calc(32px + 4vw);
+}
+
+/****************PROJECTS SECTION****************/
+.projects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.projects > div {
+  flex: 1 1 10em;
+  margin: 3em;
+}
+
+/****************SKILLS SECTION****************/
+.skills {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skills h3 {
+  font-size: 1.25em;
+}
+
+.skills > div{
+  flex: 1 1 8em;
+  text-align: center;
+  margin: 0.5em;
+}
+
+/****************Call to Action****************/
+.call-to-action {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0.5em;
+  text-align: center;
+}
+
+.call-to-action p, .button-box{
+  flex: 1 1 100%;
+  padding: 1em;
+}
+
+.call-to-action > div, a {
+  margin: 0.25em;
+}
+
+.button-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.button {
+  flex: 1 1 30%;
+  padding: 1em;
+}
+
+.button:hover {
+  border: 0.15em solid #FF5A5F;
+  color: #FF5A5F;
+}
+
+/****************ABOUT ME SECtION****************/
+.aboutMe {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.aboutMe h3 {
+  text-align: center;
+}
+.aboutMe-col-background {
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+  flex: 1 2 20em;
+  padding: 1em;
+  margin: 1em;
+}
+
+.aboutMe-col-strengths {
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+  flex: 1 2 20em;
+  padding: 1em;
+  margin: 1em;
+}
+
+.aboutMe-col-image {
+  flex: 1 1 55%;
+  text-align: center;
+  margin: 1em;
+  padding: 1em;
+}
+
+/****************Footer Section****************/
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5em;
+}
+
+/****************COLORED BOXES****************/
+.yellow-box, .blue-box, .red-box {
+    border-radius: 0.75em;
+    padding-left: 1em;
+    padding-right: 1em;
+    overflow: hidden;
+    /*margin: 1rem 0.5rem 1rem 0.5rem;*/
+}
+
+.yellow-box {
+    border: 0.15em solid #E0A458;
+}
+
+.blue-box {
+    border: 0.15em solid #0CC0D4;
+}
+
+.red-box {
+    border-left: 2px solid #FF5A5F;
+    border-right: 2px solid #FF5A5F;
+    border-radius: 0.25em;
+
+}
+
+/****************STYLED LINES****************/
+.line-sm {
+    border-bottom: 2px solid #E0A458;
+    width: 25vw;
+    display: block;
+}
+
+.line-md {
+    border-bottom: 2px solid #E0A458;
+    width: 70vw;
+    display: block;
+}
+
+.line-lg {
+    border-bottom: 2px solid #E0A458;
+    width: 100vw;
+    display: block;
+}
+
+.line-fill {
+    border-bottom: 2px solid #E0A458;
+}
+/****************COLORED TEXT****************/
+.blue-text {
+  color: #087E8B;
+}
+
+.red-text {
+  color: #FF5A5F;
+}
+
+.yellow-text {
+  color: #E0A458;
+}
+
+.yellow-link:hover {
+  color: #FF5A5F;
+}
+
+
+/*****************************************/
+
+.break:before {
+    content: "\A";
+    white-space: pre;
+}
+
+#webDeveloper {
+    color: #FF5A5F;
+}
