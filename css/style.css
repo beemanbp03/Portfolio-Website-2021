@@ -100,13 +100,14 @@ a {
 /****************PROJECTS SECTION****************/
 .projects {
   display: flex;
+  justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
 .projects > div {
-  flex: 1 1 10em;
-  margin: 3em;
+  width: 80%;
+  margin-top: 2.5em;
 }
 
 /****************SKILLS SECTION****************/
